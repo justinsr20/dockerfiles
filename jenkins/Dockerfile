@@ -1,7 +1,7 @@
 FROM jenkins:1.651.3
 LABEL maintainer="CMI Industries"
 
-RUN /usr/local/bin/install-plugins.sh job-dsl workflow-aggregator
+RUN /usr/local/bin/install-plugins.sh job-dsl workflow-aggregator github
 
 
 # This method currently does not install dependencies for plugins
